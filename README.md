@@ -1,66 +1,36 @@
-## Foundry
+# 🐙 Dynamic JellyFish NFT
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A dynamic NFT that changes its metadata every 15 seconds!
 
-Foundry consists of:
+## Features
+- ⚡ ERC721 NFT with dynamic tokenURI
+- 🔄 Cycles through 3 different images every 15 seconds
+- 📍 Deployed on Sepolia testnet
+- ✅ Verified on Etherscan
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
+## Contract Address
+`0xB03120E2eAB687E8fd745bA272958C6FbdEEC280` (Sepolia)
 
 ## Usage
+```bash
+# Deploy
+forge script script/DeployJellyFishNFT.s.sol --broadcast
 
-### Build
+# Mint  
+forge script script/MintJellyFishNFT.s.sol --broadcast
 
-```shell
-$ forge build
-```
+### 3. **Git Commands**
+```bash
+# Initialize if needed
+git init
 
-### Test
+# Add files
+git add .
 
-```shell
-$ forge test
-```
+# Commit
+git commit -m "🐙 Add dynamic JellyFish NFT with time-based metadata cycling"
 
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+# Push to GitHub
+git remote add origin https://github.com/yourusername/foundry-dynamic-nft.git
+git branch -M main
+git push -u origin main
