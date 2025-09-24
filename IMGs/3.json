@@ -1,0 +1,8 @@
+{
+  "name": "JellyFish #2",
+  "description": "This is the second NFT stored on IPFS via Pinata!",
+  "image": "bafkreie2zjw6pzo72gzmwgneoaqxgqooqgj2qrmwdvvntqm6aek4unrlvq",
+   "attributes": [
+    { "trait_type": "Color", "value": "yellow" }
+  ]
+}
